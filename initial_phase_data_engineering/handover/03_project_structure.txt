@@ -1,0 +1,95 @@
+NSW RENTAL PRESSURE & HOUSING INEQUALITY PROJECT
+PROJECT STRUCTURE & CHRONOLOGY
+
+==================================================
+PROJECT FOLDER STRUCTURE
+==================================================
+
+data/
+- raw/
+  Original datasets received from the team
+
+- cleaned/
+  Intermediate cleaned datasets generated during preprocessing
+
+- final_tableau/
+  Final Tableau-ready datasets
+
+
+scripts/
+- validation/
+  Scripts used to inspect raw files, identify header rows, validate structure and preview datasets
+
+- cleaning/
+  Scripts used for:
+  - null handling
+  - duplicate removal
+  - type conversion
+  - standardisation
+  - NSW filtering
+  - feature cleanup
+
+- merging/
+  Scripts used to:
+  - aggregate metrics
+  - merge datasets
+  - generate Tableau-ready outputs
+
+
+docs/
+- Reserved for additional project documentation if needed
+
+
+handover/
+- Final datasets
+- Data dictionary
+- Project summary
+- Structure and chronology documentation
+
+
+requirements.txt
+- Python package dependency list generated using pip freeze
+
+
+==================================================
+PROJECT CHRONOLOGY
+==================================================
+
+1. Project folder structure created in VS Code
+
+2. Raw datasets imported into:
+data/raw/
+
+3. Validation scripts created to:
+- inspect sheet structures
+- identify correct header rows
+- preview columns and values
+
+4. Cleaning scripts created for:
+- lodgements dataset
+- refunds dataset
+- bonds held dataset
+- SEIFA dataset
+- LGA population dataset
+
+5. Geography bridge dataset created by merging:
+- POA_2021_AUST
+- LGA_2025_AUST
+
+6. NSW-only filtering applied to geography bridge
+
+7. Main postcode rental dashboard dataset created by merging:
+- lodgements
+- refunds
+- bonds held
+- SEIFA
+
+8. LGA population dashboard dataset created
+
+9. Final validation checks completed:
+- no null values
+- no duplicate rows
+- consistent join keys
+- standardised formatting
+
+10. Final handover folder prepared for downstream EDA and Tableau dashboard development

@@ -1,0 +1,144 @@
+NSW RENTAL PRESSURE & HOUSING INEQUALITY PROJECT
+FINAL DATA DICTIONARY
+
+==================================================
+1. dashboard_postcode_rental.csv
+==================================================
+
+Grain Level:
+- Postcode level
+
+Purpose:
+- Main Tableau dashboard dataset
+- Used for rental pressure, affordability, inequality and postcode analysis
+
+Primary Join Key:
+- postcode
+
+Columns:
+
+postcode
+- NSW postcode
+
+total_lodgements
+- Total rental bond lodgements recorded in the postcode
+
+avg_weekly_rent
+- Average weekly rent within the postcode
+
+median_weekly_rent
+- Median weekly rent within the postcode
+
+total_refunds
+- Total rental bond refunds recorded
+
+avg_days_bond_held
+- Average number of days bond was held
+
+median_days_bond_held
+- Median days bond held
+
+avg_payment_to_tenant
+- Average refund/payment returned to tenant
+
+bonds_held
+- Total active rental bonds held
+
+seifa_disadvantage_score
+- SEIFA disadvantage index score
+
+seifa_disadvantage_decile
+- SEIFA disadvantage ranking decile
+
+seifa_advantage_disadvantage_score
+- SEIFA combined advantage/disadvantage score
+
+seifa_advantage_disadvantage_decile
+- Relative socio-economic decile ranking
+
+usual_resident_population
+- ABS resident population estimate
+
+refund_to_lodgement_ratio
+- Ratio of refunds to lodgements
+
+rent_pressure_score
+- Derived affordability pressure metric
+
+
+==================================================
+2. postcode_lga_bridge.csv
+==================================================
+
+Grain Level:
+- Postcode to LGA bridge mapping
+
+Purpose:
+- Connects postcode datasets with LGA datasets in Tableau relationships
+
+Primary Join Keys:
+- postcode
+- lga_code
+
+Columns:
+
+postcode
+- NSW postcode
+
+postcode_name
+- Postcode region name
+
+lga_code
+- ABS LGA code
+
+lga_name
+- Local Government Area name
+
+state_name
+- State name (New South Wales only)
+
+
+==================================================
+3. dashboard_lga_population.csv
+==================================================
+
+Grain Level:
+- LGA level
+
+Purpose:
+- Population and demographic dashboarding
+
+Primary Join Key:
+- lga_code
+
+Columns:
+
+lga_code
+- ABS LGA code
+
+lga_name
+- Local Government Area name
+
+population_2024
+- Estimated population for 2024
+
+births
+- Number of births
+
+deaths
+- Number of deaths
+
+net_internal_migration
+- Net internal migration
+
+net_overseas_migration
+- Net overseas migration
+
+population_2025
+- Estimated population for 2025
+
+area_sqkm
+- Area in square kilometres
+
+population_density_2025
+- Population density estimate

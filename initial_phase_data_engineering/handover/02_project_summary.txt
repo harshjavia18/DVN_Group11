@@ -1,0 +1,46 @@
+NSW RENTAL PRESSURE & HOUSING INEQUALITY PROJECT
+PROJECT SUMMARY
+
+Project Objective:
+The purpose of this project was to prepare clean, standardised and analysis-ready datasets for Tableau dashboarding, exploratory data analysis (EDA), and visual storytelling focused on rental pressure and housing inequality in New South Wales.
+
+Work Completed:
+1. Raw datasets from NSW Fair Trading, ABS population datasets, SEIFA enrichment datasets and geography bridge datasets were reviewed and validated.
+
+2. Python scripts were developed in VS Code using pandas for:
+- cleaning
+- standardisation
+- validation
+- merging
+- geographic mapping
+
+3. All datasets were cleaned by:
+- removing duplicates
+- handling missing/null values
+- standardising naming conventions
+- formatting join keys consistently
+- converting numeric columns correctly
+- filtering NSW-only geography data where required
+
+4. Median-based imputation was used for relevant numeric missing values to reduce distortion from outliers.
+
+5. Three final Tableau-ready datasets were produced:
+- dashboard_postcode_rental.csv
+- postcode_lga_bridge.csv
+- dashboard_lga_population.csv
+
+6. Final datasets were structured using a relational architecture suitable for Tableau relationships instead of heavy denormalised joins to improve dashboard performance and aggregation accuracy.
+
+Software & Tools Used:
+- VS Code
+- Python
+- pandas
+- openpyxl
+
+Final Outcome:
+The final datasets are cleaned, standardised, NSW-focused, and ready for:
+- Tableau dashboards
+- EDA
+- mapping
+- affordability analysis
+- housing inequality storytelling
